@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+nav{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+img.medium {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 120px;
+    height: 260px;
+}
+header{
+    background-color: #4aaaa5;
+    height: 50px;
+    }
+h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2.about{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+.break{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    height: 3px;
+    width: 890px;
+    background-color: #666666;
+}
+header .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    margin-right: 20px;
+
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    padding: 8px;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    margin-top:50px;
+    width: 800px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    color: #4aaaa5;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 700px;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 10em;
+  }
+  
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 430px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+    margin: 0 auto;
+    color: white;
+    background-color: #4aaaa5;
+    
+  }
+  /* This is the background image */
+  #container{
+      height: 600px;
+      background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/dark-grey-terrazzo.png);
+      padding: 20px 0 50px 0;
+      border-top: 1px solid black;
+  }
+  #content{
+      margin-left: 100px;
+      margin: auto;
+      padding: 30px;
+      height: 550px;
+      max-width: 900px;
+      background-color: #ffffff;
+      border: #dddddd;
+    }
+    img.small{
+        width: 200px;
+        height: 150px;
+        float: center;
+    }
+    img.large{
+        width: 200px;
+        height: 150px;
+        float: center;
+    }
+    h3{
+        position: absolute;
+        background-color:#4aaaa5;
+        color: #fff;
+        }
+
+    .footer{
+        height: 50px;
+        margin-top: -50px #4aaaa5;
+        background-color: #666666;
+        text-align: center;
+    }
+    .stack{
+        margin: 20px 0 0 0;
+    }
+    /* This is the pictures */
+    .pixel{
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        height: 200px;
+        float: left;
+        text-align: center;
+        overflow: hidden
+     }
+     /* This is the font within the pictires */
+    .pixel h3{
+        position: absolute;
+        background-color: #4aaaa5;
+        color: #fff;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+    
+    /* This is the beginning of Media Queries */
+
+    @media (max-width:640px){
+    header .name,
+    header nav{
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    header nav{
+        top: 0px;
+        word-spacing: 33px;
+        line-height: 20px;
+        font-weight: bold;
+        margin: 15px;
+    }
+    .break{
+        width: 95%
+    }
+    #container{
+        height: auto;
+    }
+    #container .content{
+        width: 85%;
+    }
+    }
